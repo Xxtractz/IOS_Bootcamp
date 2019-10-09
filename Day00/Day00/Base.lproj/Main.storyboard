@@ -36,21 +36,21 @@
                                         <rect key="frame" x="0.0" y="86" width="35" height="30"/>
                                         <state key="normal" title="ex02"/>
                                         <connections>
-                                            <segue destination="CZA-6f-HB4" kind="show" id="ch3-LC-KSw"/>
+                                            <segue destination="jRw-jv-scn" kind="show" id="ur0-Pr-i92"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-5m-4k5">
                                         <rect key="frame" x="0.0" y="129" width="35" height="30"/>
                                         <state key="normal" title="ex03"/>
                                         <connections>
-                                            <segue destination="bGO-tc-jDR" kind="show" id="QJl-xJ-SkJ"/>
+                                            <segue destination="CZA-6f-HB4" kind="show" id="cyI-56-oZe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY5-wt-eBF">
                                         <rect key="frame" x="0.0" y="172" width="35" height="30"/>
                                         <state key="normal" title="ex04"/>
                                         <connections>
-                                            <segue destination="jRw-jv-scn" kind="show" id="Mzm-45-7fX"/>
+                                            <segue destination="bGO-tc-jDR" kind="show" id="iWE-44-ana"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2e-lo-0T7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2888.4057971014495" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="-3026" y="-46"/>
         </scene>
         <!--Ex00 View Controller-->
         <scene sceneID="ren-gz-E0K">
@@ -150,18 +150,260 @@
         <!--Ex02 View Controller-->
         <scene sceneID="a76-bU-gDH">
             <objects>
-                <viewController id="jRw-jv-scn" customClass="ex02ViewController" customModule="Day00" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jRw-jv-scn" customClass="ex02ViewController" customModule="Day00" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ObX-QZ-el3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-9p-6g4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="null" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS5-K0-OlQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vnH-kq-efc">
+                                        <rect key="frame" x="0.0" y="135" width="414" height="132.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW1-kM-bzj">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="AC"/>
+                                                <connections>
+                                                    <action selector="clear:" destination="jRw-jv-scn" eventType="touchUpInside" id="Lfa-1y-bFI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epl-3W-l5s">
+                                                <rect key="frame" x="208" y="0.0" width="206" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="NEG"/>
+                                                <connections>
+                                                    <action selector="negative:" destination="jRw-jv-scn" eventType="touchUpInside" id="xl5-Uq-vsV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OI1-L3-tsX">
+                                        <rect key="frame" x="0.0" y="270.5" width="414" height="132"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCm-1r-ern">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num7:" destination="jRw-jv-scn" eventType="touchUpInside" id="gpO-u9-FHk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXG-sL-riJ">
+                                                <rect key="frame" x="104" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num8:" destination="jRw-jv-scn" eventType="touchUpInside" id="SF4-R0-bQz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-BI-KyC">
+                                                <rect key="frame" x="208" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num9:" destination="jRw-jv-scn" eventType="touchUpInside" id="itA-Qw-BUt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-no-zxT">
+                                                <rect key="frame" x="312" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="/"/>
+                                                <connections>
+                                                    <action selector="devide:" destination="jRw-jv-scn" eventType="touchUpInside" id="kAY-Yv-YLo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-fg-0Xe">
+                                        <rect key="frame" x="0.0" y="405.5" width="414" height="132"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-yA-D04">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num4:" destination="jRw-jv-scn" eventType="touchUpInside" id="YYk-gS-Pey"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFq-Ia-w2E">
+                                                <rect key="frame" x="104" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num5:" destination="jRw-jv-scn" eventType="touchUpInside" id="bqj-jE-x4g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhR-Db-Iml">
+                                                <rect key="frame" x="208" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num6:" destination="jRw-jv-scn" eventType="touchUpInside" id="Jef-FR-5Bj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-5X-hRd">
+                                                <rect key="frame" x="312" y="0.0" width="102" height="132"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="*"/>
+                                                <connections>
+                                                    <action selector="multiply:" destination="jRw-jv-scn" eventType="touchUpInside" id="G67-jh-3Km"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="RpT-61-9xk">
+                                        <rect key="frame" x="0.0" y="540.5" width="414" height="132.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-IP-VPT">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num1:" destination="jRw-jv-scn" eventType="touchUpInside" id="4h1-9A-Huf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POM-ET-9Oz">
+                                                <rect key="frame" x="104" y="0.0" width="102" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num2:" destination="jRw-jv-scn" eventType="touchUpInside" id="xrs-9Z-Wyg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPU-kB-s6v">
+                                                <rect key="frame" x="208" y="0.0" width="102" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num3:" destination="jRw-jv-scn" eventType="touchUpInside" id="laJ-EN-3r0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-NH-g3l">
+                                                <rect key="frame" x="312" y="0.0" width="102" height="132.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="subtract:" destination="jRw-jv-scn" eventType="touchUpInside" id="6rw-hl-WC0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2Ol-XR-MNK">
+                                        <rect key="frame" x="0.0" y="676" width="414" height="132"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLs-kS-bAC">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="num0:" destination="jRw-jv-scn" eventType="touchUpInside" id="2j3-Uf-RiF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-zg-ntR">
+                                                <rect key="frame" x="104.5" y="0.0" width="102.5" height="132"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="="/>
+                                                <connections>
+                                                    <action selector="equal_to:" destination="jRw-jv-scn" eventType="touchUpInside" id="nQV-NE-pq5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3O-5Y-Pel">
+                                                <rect key="frame" x="209" y="0.0" width="205" height="132"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="add:" destination="jRw-jv-scn" eventType="touchUpInside" id="JZ4-Hg-rSc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zLs-kS-bAC" firstAttribute="width" secondItem="K4V-zg-ntR" secondAttribute="width" id="1v0-IN-JCJ"/>
+                                            <constraint firstItem="B3O-5Y-Pel" firstAttribute="width" secondItem="K4V-zg-ntR" secondAttribute="width" multiplier="2" id="XiS-Px-rWu"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="22"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eXa-9p-6g4" firstAttribute="bottom" secondItem="TU4-1o-1oW" secondAttribute="bottom" id="7Wh-Xh-CHU"/>
+                            <constraint firstItem="eXa-9p-6g4" firstAttribute="trailing" secondItem="TU4-1o-1oW" secondAttribute="trailing" id="jrF-6j-5pH"/>
+                            <constraint firstItem="eXa-9p-6g4" firstAttribute="top" secondItem="TU4-1o-1oW" secondAttribute="top" id="pQj-pQ-DU0"/>
+                            <constraint firstItem="eXa-9p-6g4" firstAttribute="leading" secondItem="TU4-1o-1oW" secondAttribute="leading" id="pVd-fp-9ub"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TU4-1o-1oW"/>
                     </view>
                     <navigationItem key="navigationItem" id="MBm-AR-1v6"/>
+                    <connections>
+                        <outlet property="label" destination="aS5-K0-OlQ" id="IwO-XU-Ui1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TP9-ea-LDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="-46"/>
+            <point key="canvasLocation" x="-2198.5507246376815" y="-48.214285714285715"/>
         </scene>
         <!--Ex03 View Controller-->
         <scene sceneID="Shz-9s-erb">
@@ -170,14 +412,281 @@
                     <view key="view" contentMode="scaleToFill" id="fue-7y-fwf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="0Lg-LI-1VZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZLf-fm-XFe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M36-Co-qXA">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="54"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-0A-xCM">
+                                                <rect key="frame" x="0.0" y="135" width="414" height="132.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8f-sA-P0s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="AC"/>
+                                                        <connections>
+                                                            <action selector="clear:" destination="CZA-6f-HB4" eventType="touchUpInside" id="1gj-rW-JSr"/>
+                                                            <action selector="clear:" destination="jRw-jv-scn" eventType="touchUpInside" id="W0G-EL-Bru"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJg-SS-LBR">
+                                                        <rect key="frame" x="208" y="0.0" width="206" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="NEG"/>
+                                                        <connections>
+                                                            <action selector="negative:" destination="CZA-6f-HB4" eventType="touchUpInside" id="eQQ-dv-G9e"/>
+                                                            <action selector="negative:" destination="jRw-jv-scn" eventType="touchUpInside" id="s2K-Gx-gvi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZRd-7B-BMU">
+                                                <rect key="frame" x="0.0" y="270.5" width="414" height="132"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-Cx-ao1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num7:" destination="jRw-jv-scn" eventType="touchUpInside" id="EFp-1u-Hh3"/>
+                                                            <action selector="num7:" destination="CZA-6f-HB4" eventType="touchUpInside" id="vlZ-Hy-BAD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-7Y-Hek">
+                                                        <rect key="frame" x="104" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num8:" destination="jRw-jv-scn" eventType="touchUpInside" id="0Yy-kt-Mu7"/>
+                                                            <action selector="num8:" destination="CZA-6f-HB4" eventType="touchUpInside" id="yrP-rZ-anc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I39-uz-mxx">
+                                                        <rect key="frame" x="208" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num9:" destination="jRw-jv-scn" eventType="touchUpInside" id="2sX-Pe-lRa"/>
+                                                            <action selector="num9:" destination="CZA-6f-HB4" eventType="touchUpInside" id="BkS-v4-aB3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-Wd-B4c">
+                                                        <rect key="frame" x="312" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="/"/>
+                                                        <connections>
+                                                            <action selector="devide:" destination="CZA-6f-HB4" eventType="touchUpInside" id="BAN-5u-eTI"/>
+                                                            <action selector="devide:" destination="jRw-jv-scn" eventType="touchUpInside" id="dkB-Jz-XUB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dn0-mk-6Mo">
+                                                <rect key="frame" x="0.0" y="405.5" width="414" height="132"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-9E-Txi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num4:" destination="CZA-6f-HB4" eventType="touchUpInside" id="0a8-y3-5mF"/>
+                                                            <action selector="num4:" destination="jRw-jv-scn" eventType="touchUpInside" id="pyB-ip-foC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQV-Bb-NWr">
+                                                        <rect key="frame" x="104" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num5:" destination="jRw-jv-scn" eventType="touchUpInside" id="JZL-bY-lsg"/>
+                                                            <action selector="num5:" destination="CZA-6f-HB4" eventType="touchUpInside" id="b1v-tf-kla"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zik-O3-gSA">
+                                                        <rect key="frame" x="208" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num6:" destination="CZA-6f-HB4" eventType="touchUpInside" id="k6a-NW-Fy2"/>
+                                                            <action selector="num6:" destination="jRw-jv-scn" eventType="touchUpInside" id="qfw-yv-O88"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-QB-1EI">
+                                                        <rect key="frame" x="312" y="0.0" width="102" height="132"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="*"/>
+                                                        <connections>
+                                                            <action selector="multiply:" destination="CZA-6f-HB4" eventType="touchUpInside" id="OEx-if-q1J"/>
+                                                            <action selector="multiply:" destination="jRw-jv-scn" eventType="touchUpInside" id="bpn-P6-sbD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NfV-Kb-2Kz">
+                                                <rect key="frame" x="0.0" y="540.5" width="414" height="132.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjQ-XP-N6s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num1:" destination="CZA-6f-HB4" eventType="touchUpInside" id="wkQ-Sp-rxf"/>
+                                                            <action selector="num1:" destination="jRw-jv-scn" eventType="touchUpInside" id="xRO-jR-Rwo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-Ue-ZOm">
+                                                        <rect key="frame" x="104" y="0.0" width="102" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num2:" destination="jRw-jv-scn" eventType="touchUpInside" id="N2h-V7-pUV"/>
+                                                            <action selector="num2:" destination="CZA-6f-HB4" eventType="touchUpInside" id="Yeu-hr-g4k"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAZ-gG-9zm">
+                                                        <rect key="frame" x="208" y="0.0" width="102" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num3:" destination="jRw-jv-scn" eventType="touchUpInside" id="YDa-A0-GXs"/>
+                                                            <action selector="num3:" destination="CZA-6f-HB4" eventType="touchUpInside" id="Yzl-Pr-vpC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa2-iL-uda">
+                                                        <rect key="frame" x="312" y="0.0" width="102" height="132.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="subtract:" destination="jRw-jv-scn" eventType="touchUpInside" id="fKr-6x-AY7"/>
+                                                            <action selector="subtract:" destination="CZA-6f-HB4" eventType="touchUpInside" id="shZ-PR-ACO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="23"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="btF-ME-KXQ">
+                                                <rect key="frame" x="0.0" y="676" width="414" height="132"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-If-3X1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="132"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="num0:" destination="CZA-6f-HB4" eventType="touchUpInside" id="4ZG-23-yHi"/>
+                                                            <action selector="num0:" destination="jRw-jv-scn" eventType="touchUpInside" id="H02-Fa-GoU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRH-66-mcW">
+                                                        <rect key="frame" x="104.5" y="0.0" width="102.5" height="132"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="="/>
+                                                        <connections>
+                                                            <action selector="equal_to:" destination="jRw-jv-scn" eventType="touchUpInside" id="Jsy-Q4-tuG"/>
+                                                            <action selector="equal_to:" destination="CZA-6f-HB4" eventType="touchUpInside" id="tFm-4d-HDW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD9-1o-XQH">
+                                                        <rect key="frame" x="209" y="0.0" width="205" height="132"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                                                        <state key="normal" title="+"/>
+                                                        <connections>
+                                                            <action selector="add:" destination="CZA-6f-HB4" eventType="touchUpInside" id="OeC-67-1BB"/>
+                                                            <action selector="add:" destination="jRw-jv-scn" eventType="touchUpInside" id="QnA-c0-nQ3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="HD9-1o-XQH" firstAttribute="width" secondItem="lRH-66-mcW" secondAttribute="width" multiplier="2" id="RpW-d0-AKu"/>
+                                                    <constraint firstItem="4Uo-If-3X1" firstAttribute="width" secondItem="lRH-66-mcW" secondAttribute="width" id="adw-DG-DfD"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="22"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZLf-fm-XFe" firstAttribute="leading" secondItem="nng-3D-OoB" secondAttribute="leading" id="6LZ-xI-Uyc"/>
+                                    <constraint firstItem="ZLf-fm-XFe" firstAttribute="top" secondItem="nng-3D-OoB" secondAttribute="top" id="Wu6-xt-r0L"/>
+                                    <constraint firstItem="ZLf-fm-XFe" firstAttribute="bottom" secondItem="nng-3D-OoB" secondAttribute="bottom" id="mkC-0I-EGz"/>
+                                    <constraint firstItem="ZLf-fm-XFe" firstAttribute="trailing" secondItem="nng-3D-OoB" secondAttribute="trailing" id="xWi-4g-iol"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="nng-3D-OoB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cjd-Py-L5B"/>
                     </view>
                     <navigationItem key="navigationItem" id="fqE-b6-5vv"/>
+                    <connections>
+                        <outlet property="label" destination="M36-Co-qXA" id="IlI-dE-ztR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcA-Xf-kWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1967" y="-46"/>
+            <point key="canvasLocation" x="-1352" y="-46"/>
         </scene>
         <!--Ex04 View Controller-->
         <scene sceneID="DUa-iU-htO">
@@ -193,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcW-mb-dJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1099" y="-46"/>
+            <point key="canvasLocation" x="-614" y="-46"/>
         </scene>
     </scenes>
 </document>
