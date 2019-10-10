@@ -1,12 +1,9 @@
 #!/usr/bin/swift
 
-var printcolor: [Color] = Color.allColors
-var printvalue: [Value] = Value.allValues
-
-for color in printcolor{
-  print("\(color.rawValue)")
+for color in Color.allColors{
+  print("\(color) \t= \(color.rawValue)")
 }
 
-for value in printvalue{
-    print("\(value.rawValue)")
+for value in Value.allValues{
+    print("\(value) \t= \(value.rawValue)")
 }
