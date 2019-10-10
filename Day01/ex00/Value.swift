@@ -1,6 +1,4 @@
-import Foundation
-
-enum Value :Int {
+enum Value : Int {
     case Ace    = 1
     case Two    = 2
     case Three  = 3
